@@ -1,5 +1,5 @@
 let convention = 'twenty-four'
-const display = document.queryData('display')
+const display = document.querySelector('[data-display]')
 const radioButtons = document.querySelectorAll('input[name="convention"]')
 
 radioButtons.forEach(node => node.addEventListener('click', (e) => {
