@@ -1,0 +1,8 @@
+---
+layout: base
+---
+{% if styles %}<link href="/css/{{ styles }}" rel="stylesheet">{% endif %}
+
+{{ content | safe }}
+
+{% if script %}<script src="/js/{{ script }}"></script>{% endif %}

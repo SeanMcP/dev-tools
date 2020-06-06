@@ -1,0 +1,23 @@
+{
+  "name": "@seanmcp/dev-tools",
+  "version": "1.0.0",
+  "description": "Learn the DevTools by example >",
+  "scripts": {
+    "build": "eleventy",
+    "start": "eleventy --serve --port=8088"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SeanMcP/dev-tools.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SeanMcP/dev-tools/issues"
+  },
+  "homepage": "https://github.com/SeanMcP/dev-tools#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.11.0"
+  }
+}
