@@ -1,7 +1,7 @@
 ---
-title: Debug Clock
-script: debug-clock.js
-styles: debug-clock.css
+title: Clock
+script: clock.js
+styles: clock.css
 ---
 
 For the following exercises, we'll be referencing this clock:
