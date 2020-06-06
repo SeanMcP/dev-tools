@@ -7,14 +7,14 @@ styles: clock.css
 For the following exercises, we'll be referencing this clock:
 
 <div id="clock">
-    <div id="display"></div>
-    <div id="options">
+    <div data-display></div>
+    <div data-options>
         <label>
-            <input type="radio" name="convention" id="twelve" value="twelve">
+            <input type="radio" name="convention" value="twelve">
             <span>12-hour</span>
         </label>
         <label>
-            <input type="radio" name="convention" id="twenty-four" value="twenty-four" checked>
+            <input type="radio" name="convention" value="twenty-four" checked>
             <span>24-hour</span>
         </label>
     </div>

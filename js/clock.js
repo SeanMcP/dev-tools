@@ -1,5 +1,5 @@
 let convention = 'twenty-four'
-const displayEl = document.getElementById('display')
+const display = document.queryData('display')
 const radioButtons = document.querySelectorAll('input[name="convention"]')
 
 radioButtons.forEach(node => node.addEventListener('click', (e) => {
@@ -9,7 +9,7 @@ radioButtons.forEach(node => node.addEventListener('click', (e) => {
 
 function renderClock() {
     const time = new Date().toLocaleTimeString(undefined, { hour12: convention === 'twelve' })
-    displayEl.textContent = time
+    display.textContent = time
 }
 
 renderClock()
