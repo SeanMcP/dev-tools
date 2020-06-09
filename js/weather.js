@@ -43,22 +43,6 @@ window.addEventListener('load', async () => {
         <span class="period">${period.name}</span>
         <span class="details">${period.detailedForecast}</span>
         `
-        console.log(period.shortForecast)
         forecastList.appendChild(li)
     }) 
 })
-// {
-//     detailedForecast: "Sunny, with a high near 81. Northwest wind around 9 mph."
-//     endTime: "2020-06-06T18:00:00-04:00"
-//     icon: "https://api.weather.gov/icons/land/day/few?size=medium"
-//     isDaytime: true
-//     name: "This Afternoon"
-//     number: 1
-//     shortForecast: "Sunny"
-//     startTime: "2020-06-06T15:00:00-04:00"
-//     temperature: 81
-//     temperatureTrend: null
-//     temperatureUnit: "F"
-//     windDirection: "NW"
-//     windSpeed: "9 mph"
-// }
