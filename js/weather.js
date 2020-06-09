@@ -3,12 +3,15 @@ const forecastList = document.querySelector('[data-forecast]')
 const FORECAST_URL = 'FORECAST_URL'
 const EmojiMap = {
     "Chance Rain Showers": "🌦",
+    "Clear": "☀️",
     "Cloudy": "☁️",
     "Sunny": "☀️",
     "Mostly Sunny": "☀️",
     "Mostly Clear": "🌤",
     "Mostly Cloudy": "🌥",
+    "Mostly Cloudy then Slight Chance Rain Showers": "🌧",
     "Partly Cloudy": "⛅️",
+    "Slight Chance Rain Showers": "🌧",
     "Slight Chance Showers And Thunderstorms": "⛈",
     "Chance Showers And Thunderstorms": "⛈",
     "Showers And Thunderstorms Likely": "⛈",
