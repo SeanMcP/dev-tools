@@ -9,3 +9,11 @@
     pointer-events: none;
     cursor: wait;
 }
+
+[data-form] label {
+    align-items: center;
+    display: inline-grid;
+    gap: 0.25rem;
+    grid-template-columns: max-content auto;
+    margin-left: 1rem;
+}
