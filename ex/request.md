@@ -13,7 +13,7 @@ Use the buttons below to make network requests. The server response will be visi
         <button data-method="PATCH">PATCH</button>
         <button data-method="POST">POST</button>
         <button data-method="PUT">PUT</button>
-        <button data-reset>Reset</button>
     </div>
-    <pre data-console></pre>
+    <pre data-output></pre>
+    <button data-reset>Reset</button>
 </div>

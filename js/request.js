@@ -1,22 +1,27 @@
-const URL = 'https://anything-goes-api--seanmcp.repl.co/'
-const console = document.querySelector('[data-console]')
+const URL = 'https://mirror-api--seanmcp.repl.co/'
+const output = document.querySelector('[data-output]')
 const reset = document.querySelector('[data-reset]')
 
 function resetConsole() {
-    console.innerHTML = '📡 <span class="init">Network requests are neat!</span>'
+    output.innerHTML = '📡 <span class="init">Network requests are neat!</span>'
 }
 
 reset.addEventListener('click', resetConsole)
 window.onload = resetConsole
 
 async function handleClick({ target }) {
-    const res = await fetch(URL, { method: target.getAttribute('data-method'), mode: 'cors' })
+    const method = target.getAttribute('data-method')
     let innerHTML
-    if (res.ok) {
-        const { method, origin } = await res.json()
-        innerHTML = `✅ <b>${method}</b> received from <b>${origin}</b>`
+    try {
+        const res = await fetch(URL + method.toLowerCase(), { 'Content-Type': 'application/json', method, mode: 'cors' })
+        if (res.ok) {
+            const { method, origin, url } = await res.json()
+            innerHTML = `✅ <b>${method}</b> ${url} from <b>${origin}</b>`
+        }
+    } catch (e) {
+        console.error(e)
     }
-    console.innerHTML = innerHTML || "❌ <span class='error'>Uh oh! Something went wrong!</span>"
+    output.innerHTML = innerHTML || "❌ <span class='error'>Uh oh! Something went wrong!</span>"
 }
 
 document.querySelectorAll('button[data-method]').forEach(node => {

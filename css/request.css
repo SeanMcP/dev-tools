@@ -1,4 +1,4 @@
-pre[data-console] {
+pre[data-output] {
     background: hsl(0, 0%, 10%);
     color: hsl(125, 77%, 45%);
     font-size: smaller;
