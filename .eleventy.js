@@ -23,7 +23,7 @@ module.exports = function (eleventyConfig) {
     // Leading or trailing slashes are all normalized away, so don’t worry about it.
     // If you don’t have a subdirectory, use "" or "/" (they do the same thing)
     // This is only used for URLs (it does not affect your file structure)
-    pathPrefix: '/',
+    pathPrefix: '/dev-tools/',
     passthroughFileCopy: true,
     markdownTemplateEngine: 'njk',
     dir: {
