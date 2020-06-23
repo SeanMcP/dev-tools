@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "Learn the DevTools by example >",
   "scripts": {
-    "build": "eleventy",
-    "start": "eleventy --serve --port=8088"
+    "build": "npm run clear && eleventy",
+    "clear": "rm -rf docs/",
+    "start": "npm run clear && eleventy --serve --port=8088"
   },
   "repository": {
     "type": "git",

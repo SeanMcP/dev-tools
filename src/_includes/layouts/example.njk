@@ -1,8 +1,14 @@
 ---
 layout: base
 ---
-{% if styles %}<link href="/css/{{ styles }}" rel="stylesheet">{% endif %}
+{% if styles %}
+{% set stylesUrl = ["/css/", styles] | join | url %}
+<link href="{{ stylesUrl }}" rel="stylesheet">
+{% endif %}
 
 {{ content | safe }}
 
-{% if script %}<script src="/js/{{ script }}"></script>{% endif %}
+{% if script %}
+{% set scriptUrl = ["/js/", script] | join | url %}
+<script src="{{ scriptUrl }}"></script>
+{% endif %}
