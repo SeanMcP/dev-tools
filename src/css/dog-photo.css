@@ -1,0 +1,19 @@
+[data-image] {
+    border-radius: 4px;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+[data-button][aria-busy="true"] {
+    opacity: 0.25;
+    pointer-events: none;
+    cursor: wait;
+}
+
+[data-form] label {
+    align-items: center;
+    display: inline-grid;
+    gap: 0.25rem;
+    grid-template-columns: max-content auto;
+    margin-left: 1rem;
+}

@@ -1,0 +1,28 @@
+#clock {
+    background: white;
+    border-radius: 4px;
+    padding: 1rem;
+}
+
+[data-display] {
+    font-family: 'Fira Code';
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+[data-options] {
+    display: flex;
+    justify-content: center;
+}
+
+[data-options] label {
+    align-items: center;
+    display: grid;
+    gap: 0.25rem;
+    grid-template-columns: max-content auto;
+}
+
+[data-options] label + label {
+    margin-left: 1rem;
+}

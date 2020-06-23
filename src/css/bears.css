@@ -1,0 +1,15 @@
+#bears label {
+    align-items: center;
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns: 5rem auto;
+}
+
+#bears [data-image-container] {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 4px;
+    margin-top: 1rem;
+    height: 30rem;
+}

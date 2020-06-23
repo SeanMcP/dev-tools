@@ -2,6 +2,10 @@
 title: Dog Photo
 script: dog-photo.js
 styles: dog-photo.css
+tags:
+    - images
+    - network
+    - xhr
 ---
 
 Click the button below to retrieve a new dog photo. You can select been a lovable mutt or a random breed.

@@ -2,6 +2,9 @@
 title: Request
 script: request.js
 styles: request.css
+tags:
+    - network
+    - xhr
 ---
 
 Use the buttons below to make network requests. The server response will be visible in the console below.

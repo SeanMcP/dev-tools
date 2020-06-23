@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+
+
+
+
+
+<title>Clock - DevTools by Example</title>
+
+
+<meta name="description" content="">
+
+
+
+
+
+<meta property="og:type" content="website" />
+
+
+
+
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&family=Fira+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+        <link href="/css/common.css" rel="stylesheet" >
+        <link href="/img/favicon.svg" rel="shortcut icon" type="image/svg">
+        <script src="/js/common.js"></script>
+    </head>
+    <body>
+        <header id="header">
+            <a href="/">DevTools</a>
+            <span>by Example</span>
+        </header>
+        <main id="main">
+            <h1>Clock</h1>
+            <link href="/css/clock.css" rel="stylesheet">
+
+<p>For the following exercises, we'll be referencing this clock:</p>
+<div id="clock">
+    <div data-display></div>
+    <div data-options>
+        <label>
+            <input type="radio" name="convention" value="twelve">
+            <span>12-hour</span>
+        </label>
+        <label>
+            <input type="radio" name="convention" value="twenty-four" checked>
+            <span>24-hour</span>
+        </label>
+    </div>
+</div>
+<p>It updates every second and gives you the option of toggling between 12- and 24-hour time.</p>
+
+
+<script src="/js/clock.js"></script>
+        </main>
+        <footer id="footer">
+            <div>Made by <a href="https://seanmcp.com">SeanMcP</a></div>
+        </footer>
+    </body>
+</html>

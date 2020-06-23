@@ -4,7 +4,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addLayoutAlias('base', 'layouts/base.njk')
   eleventyConfig.addLayoutAlias('example', 'layouts/example.njk')
 
-  eleventyConfig.addCollection('tagList', require('./_includes/collections/getTagList'))
+  eleventyConfig.addCollection('tagList', require('./src/_includes/collections/getTagList'))
 
   eleventyConfig.addFilter('log', value => {
     console.log(value)
@@ -12,9 +12,9 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addFilter('tags', list => list.filter(item => item !== 'examples'))
 
-  eleventyConfig.addPassthroughCopy('css')
-  eleventyConfig.addPassthroughCopy('img')
-  eleventyConfig.addPassthroughCopy('js')
+  eleventyConfig.addPassthroughCopy('src/css')
+  eleventyConfig.addPassthroughCopy('src/img')
+  eleventyConfig.addPassthroughCopy('src/js')
 
   return {
     templateFormats: ['md', 'njk', 'html', 'liquid'],
@@ -27,10 +27,10 @@ module.exports = function (eleventyConfig) {
     passthroughFileCopy: true,
     markdownTemplateEngine: 'njk',
     dir: {
-      input: '.',
+      input: './src',
       includes: '_includes',
       data: '_data',
-      output: '_site'
+      output: './docs'
     }
   }
 }

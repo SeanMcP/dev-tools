@@ -2,6 +2,8 @@
 title: Counter
 script: counter.js
 styles: counter.css
+tags:
+    - breakpoints
 ---
 
 <div id="counter">

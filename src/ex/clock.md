@@ -2,6 +2,8 @@
 title: Clock
 script: clock.js
 styles: clock.css
+tags:
+    - breakpoints
 ---
 
 For the following exercises, we'll be referencing this clock:

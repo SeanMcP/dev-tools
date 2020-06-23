@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+
+
+
+
+
+<title>Bears - DevTools by Example</title>
+
+
+<meta name="description" content="">
+
+
+
+
+
+<meta property="og:type" content="website" />
+
+
+
+
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&family=Fira+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+        <link href="/css/common.css" rel="stylesheet" >
+        <link href="/img/favicon.svg" rel="shortcut icon" type="image/svg">
+        <script src="/js/common.js"></script>
+    </head>
+    <body>
+        <header id="header">
+            <a href="/">DevTools</a>
+            <span>by Example</span>
+        </header>
+        <main id="main">
+            <h1>Bears</h1>
+            <link href="/css/bears.css" rel="stylesheet">
+
+<p>Move the sliders below to see a new bear picture!</p>
+<div id="bears">
+    <label>
+        <b>Width</b>
+        <input type="range" min="400" max="800" value="600" step="25" name="width" >
+    </label>
+    <label>
+        <b>Height</b>
+        <input type="range" min="400" max="800" value="600" step="25" name="height" >
+    </label>
+    <div data-image-container></div>
+</div>
+
+
+<script src="/js/bears.js"></script>
+        </main>
+        <footer id="footer">
+            <div>Made by <a href="https://seanmcp.com">SeanMcP</a></div>
+        </footer>
+    </body>
+</html>

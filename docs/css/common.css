@@ -88,3 +88,22 @@ hr {
   border-top: 1px solid var(--faint-gray);
   text-align: right;
 }
+
+.tag {
+  /* border: 1px solid var(--faint-gray); */
+  /* border-radius: 2px; */
+  font-size: small;
+  padding: 2px;
+  margin-right: 4px;
+  text-decoration: none;
+}
+
+.tag::before {
+  content: '#';
+}
+
+.tag:focus,
+.tag:hover {
+  /* box-shadow: 0 0 0 2px dodgerblue; */
+  text-decoration: underline;
+}

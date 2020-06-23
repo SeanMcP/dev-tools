@@ -2,6 +2,9 @@
 title: Bears
 script: bears.js
 styles: bears.css
+tags:
+    - images
+    - network
 ---
 
 Move the sliders below to see a new bear picture!
