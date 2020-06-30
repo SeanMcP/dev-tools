@@ -12,4 +12,12 @@ tags:
     <button data-increment>+1</button>
 </div>
 
-You can increment and decrement with the "+1" and "-1" buttons, respectively, or input a number directly.
+You can increase and decrease the count with the "+1" and "-1" buttons, respectively, or enter a number directly into the input.
+
+<details>
+<summary><b>Exercise</b></summary>
+
+There is a bug when you enter a value into the input that is not a number.
+
+Use the debugger to find out where the problem is occurring and why.
+</details>
