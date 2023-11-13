@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/SeanMcP/dev-tools#readme",
   "devDependencies": {
-    "@11ty/eleventy": "^1.0.2",
+    "@11ty/eleventy": "^2.0.1",
     "pre-commit": "^1.2.2"
   },
   "pre-commit": ["build"]
